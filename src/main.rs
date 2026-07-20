@@ -1,5 +1,6 @@
 mod array {
     pub mod easy_14;
+    pub mod easy_27;
 }
 
 use std::env;
@@ -11,13 +12,12 @@ fn main() {
         process::exit(1);
     });
 
-    let result = match module_name.as_str() {
+    match module_name.as_str() {
         "easy_14" => array::easy_14::easy_14(),
+        "easy_27" => array::easy_27::easy_27(),
         _ => {
             eprintln!("unknown module: {module_name}");
             process::exit(1);
         }
     };
-
-    println!("{result}");
 }

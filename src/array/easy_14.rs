@@ -1,4 +1,4 @@
-pub fn easy_14() -> String {
+pub fn easy_14() {
     const STRS_1: [&str; 3] = ["flower", "flow", "flight"];
     const STRS_2: [&str; 3] = ["dog", "racecar", "car"];
 
@@ -10,8 +10,6 @@ pub fn easy_14() -> String {
         "{}",
         longest_common_prefix(STRS_2.iter().map(|&s| s.to_string()).collect())
     );
-
-    "easy_14".to_string()
 }
 
 fn longest_common_prefix(strs: Vec<String>) -> String {
