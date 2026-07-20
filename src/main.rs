@@ -3,6 +3,7 @@ mod array {
     pub mod easy_217;
     pub mod easy_27;
     pub mod med_11;
+    pub mod med_15;
 }
 
 use std::env;
@@ -19,6 +20,7 @@ fn main() {
         "easy_27" => array::easy_27::easy_27(),
         "easy_217" => array::easy_217::easy_217(),
         "med_11" => array::med_11::med_11(),
+        "med_15" => array::med_15::med_15(),
         _ => {
             eprintln!("unknown module: {module_name}");
             process::exit(1);
